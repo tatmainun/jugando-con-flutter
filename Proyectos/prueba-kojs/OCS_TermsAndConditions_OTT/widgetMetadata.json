@@ -1,0 +1,22 @@
+{
+  "imports": [
+    "order"
+  ],
+  "translations": [
+    {
+      "name": "OCS_TermsAndConditions_OTT",
+      "language": "en"
+    },
+    {
+      "name": "OCS_TermsAndConditions_OTT",
+      "language": "es"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "pageTypes": [
+    "checkout"
+  ],
+  "config": {}
+}

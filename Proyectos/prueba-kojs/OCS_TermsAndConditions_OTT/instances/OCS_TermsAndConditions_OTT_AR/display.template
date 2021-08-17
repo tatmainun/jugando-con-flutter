@@ -1,0 +1,42 @@
+<!-- Terms Conditions -->
+<!-- ko if: initialized() && isLoaded -->
+<!-- ko if: initialize($data) -->
+<!-- /ko -->
+<div class="ocs-checkout-terms-and-conditions-ott container-fluid mx-0 px-0">
+  <div class="ocs-cart-header hide">
+    <h2>Info</h2>
+  </div>
+
+  <div class="row">
+    <form>
+      <div class="form-check hide">
+        <input type="checkbox"
+               class="form-check-input"
+               data-bind="checked: cartService.observable.isElectronicInvoice">
+        <p class="dtv-p">Quiero recibir únicamente factura electrónica</p>
+      </div>
+      <div class="form-check hide">
+        <input type="checkbox"
+               class="form-check-input"
+               data-bind="checked: cartService.observable.isNewsletter">
+        <p class="dtv-p">Suscribirme al Newsletter para recibir las últimas novedades</p>
+      </div>
+      <div class="form-check">
+        <input type="checkbox"
+               class="form-check-input"
+               data-bind="checked: cartService.observable.isTermsConditions">
+        <p class="dtv-p">Acepto <a
+            data-bind="attr:{ href: site().extensionSiteSettings.OCS_InformationLinks.termsAndConditionsLink, target: '_blank'}">Términos
+          y Condiciones</a> del servicio y <a
+            data-bind="attr:{ href: site().extensionSiteSettings.OCS_InformationLinks.privacyPolicyLink, target: '_blank'}">política
+          de privacidad</a>.</p>
+      </div>
+      <div class="ocs-secure-site-ad text-center hide">
+        <p class="dtv-p"><i class="dtv-icon dtv-padlock-black"></i>Es un sitio seguro</p>
+      </div>
+    </form>
+  </div>
+
+</div>
+<!-- /ko -->
+<!-- End Terms Conditions -->
