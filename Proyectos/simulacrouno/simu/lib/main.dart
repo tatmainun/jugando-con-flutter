@@ -95,10 +95,11 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children:[CircularCountDownTimer(
-            width: 400, 
-            height: 400, 
-            duration: 3600,
+            width: 200, 
+            height: 200, 
+            duration: 300,
             strokeWidth: 20,
+            textStyle: TextStyle(fontSize: 40),
             fillColor: Colors.blue, 
             ringColor: Colors.cyan,
             autoStart: false,
