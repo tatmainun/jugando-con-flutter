@@ -111,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           _button(title: "Play", onPressed: () => _controller.start()),
           _button(title: "Pause", onPressed: () => _controller.pause()),
@@ -123,10 +123,10 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   _button({required String title, required VoidCallback onPressed}) {
-    return Expanded(child: ElevatedButton(
+    return ElevatedButton(
             style: ElevatedButton.styleFrom(primary: Colors.cyan[300]),
             child: Text(title),
             onPressed: () => onPressed(),
-          ));
+          );
   }
 }
